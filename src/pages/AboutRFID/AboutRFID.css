@@ -1,0 +1,71 @@
+.rfid-banner {
+  width: 100%;
+  height: 918px;
+}
+.Container {
+  background-color: black;
+  width: 100%;
+  height: 8620px;
+}
+.Container-text {
+  color: rgb(255, 0, 0);
+  /* border: 1px solid white; */
+  width: 95%;
+  height: 7677px;
+  box-sizing: border-box;
+  margin: 0 auto; /* ✅ centers the box */
+}
+.Title {
+  color: #E88524;
+  font-size: 42px;
+  font-family: 'Rubik-Bold';
+}
+.Container1 {
+  margin-top: 61px;
+}
+.whitetext {
+  color: white;
+  font-size: 24px;
+  font-family: 'Rubik-Regular';
+  line-height: 1.6;
+  padding-top: 35px;
+}
+.lastwhitetext {
+  color: white;
+  font-size: 24px;
+  font-family: 'Rubik-Regular';
+  line-height: 1.6;
+  padding-top: 35px;
+  margin-bottom: 200px;
+}
+.seclastwhitetext {
+  color: white;
+  font-size: 24px;
+  font-family: 'Rubik-Regular';
+  line-height: 1.6;
+
+  margin-bottom: 200px;
+}
+.secTitle {
+  color: #E88524;
+  font-size: 42px;
+  font-family: 'Rubik-Bold';
+  margin-left: 147px;
+}
+.secwhitetext {
+  color: white;
+  font-size: 24px;
+  font-family: 'Rubik-Regular';
+  line-height: 1.6;
+  padding-top: 35px;
+  margin-left: 147px;
+}
+.border{
+  color: rgb(255, 0, 0);
+  border: 1px solid white;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0 auto; /* ✅ centers the box */
+  padding-top: 35px;
+  padding-bottom: 35px;
+}

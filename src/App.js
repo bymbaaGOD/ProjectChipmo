@@ -1,15 +1,19 @@
-import './App.css';
-import Footer from './components/Footer/footer';
-import Header from './components/Header/header';
-import AboutRFID from './pages/AboutRFID/aboutRFID'
-import SystemPage from './pages/SystemPage/systemPage'
+// src/App.js
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Contact from "./pages/Contact/Contact";
+import "./App.css";
 
 function App() {
   return (
-    <>
-      <Header/>
-      <SystemPage/>
-    </>
+    <Router>
+      <Header />
+
+      <Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -40,6 +40,11 @@
   cursor: pointer;
 }
 
+.navItem a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .mobileMenuButton {
   color: #fff;
   font-size: 24px;

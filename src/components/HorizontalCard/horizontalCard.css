@@ -1,0 +1,59 @@
+
+
+.horizontal-card {
+  display: flex;
+  justify-content: space-between;
+  max-height: 700px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.192);
+  overflow: hidden;
+  align-items: stretch; 
+  background-color: rgba(46, 46, 46, 0.321)
+}
+
+.horizontal-card-image {
+  width: 600px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+  border-radius: 20px;
+}
+
+.horizontal-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-card-title {
+  font-size: 32px;
+  font-family: 'Rubik-Bold';
+  margin-bottom: 10px;
+  color: #E88524;
+}
+
+.horizontal-card-Subtitle {
+  font-size: 24px;
+  font-family: 'Rubik-Bold';
+  margin-bottom: 10px;
+  color: white
+}
+
+.horizontal-card-description {
+  font-size: 18px;
+  font-family: 'Rubik-Regular';
+  color: #f9f9f9dc;
+  line-height: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; 
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+.horizontal-card:hover{
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.300);
+}

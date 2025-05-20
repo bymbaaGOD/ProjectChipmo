@@ -1,0 +1,62 @@
+.info-card {
+  width: 300px;
+  height: 460px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.192);
+  transition: transform 0.2s ease-in-out;
+  background-color: rgba(46, 46, 46, 0.321)
+}
+
+.info-card:hover {
+  transform: scale(1.01);
+}
+
+.info-card-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  display: block;       /* make it a block-level element */
+  margin: 0 auto;   
+}
+
+.info-card-content {
+  height: 50%;
+  padding: 24px;
+  overflow: hidden;
+  position: relative;
+}
+
+.info-card-title {
+  font-family: 'Rubik-Bold';
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #E88524
+}
+::-webkit-scrollbar {
+  display: none
+}
+
+.info-card-description {
+  font-family: 'Rubik-Regular';
+  font-size: 0.9rem;
+  color: #f9f9f9dc;
+  line-height: 1.5;
+  max-height: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-card:hover .info-card-description {
+  -webkit-line-clamp: unset;
+  height: auto;
+  overflow-y: auto;
+  padding-right: 4px;
+}

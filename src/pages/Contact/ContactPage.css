@@ -71,8 +71,6 @@
   text-decoration: underline;
   color: #0056b3;
 }
-
-/* Animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;

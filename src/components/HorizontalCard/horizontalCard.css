@@ -18,12 +18,28 @@
   flex-shrink: 0;
   display: block;
   border-radius: 20px;
+  align-self: center;
 }
 
 .horizontal-card-content {
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.horizontal-card-content div {
+  margin-bottom: 10px;
+}
+
+.horizontal-card3 {
+  margin-left: 15px;
+  font-size: 18px;
+  font-family: 'Rubik-Regular';
+  color: #f9f9f9dc;
+  line-height: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; 
 }
 
 .horizontal-card-title {
@@ -48,6 +64,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box; 
+}
+
+.horizontal-card3-image {
+  width: 300px;
+  height: 300px;
+  align-self: center;
 }
 
 ::-webkit-scrollbar {

@@ -9,9 +9,20 @@ const Contact = () => {
       <div className="contact-content">
         <div className="map-container">
           <h2>Байршил</h2>
-          <MapContainer center={[47.9006, 106.9173]} zoom={16} className="map">
+          <MapContainer
+            center={[47.91845, 106.91768]}
+            zoom={16}
+            className="map"
+          >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[47.9006, 106.9173]}>
+            <Marker
+              position={[47.91845, 106.91768]}
+              eventHandlers={{
+                add: (e) => {
+                  e.target.openPopup();
+                },
+              }}
+            >
               <Popup>CHIPMO Байршил - MN Tower</Popup>
             </Marker>
           </MapContainer>
@@ -19,35 +30,45 @@ const Contact = () => {
         <div className="contact-info">
           <h2>Холбоо барих</h2>
           <div className="contact-item">
-            <span className="contact-icon">📍</span>
+            <span className="contact-icon">
+              <i className="fas fa-map-marker-alt"></i>
+            </span>
             <p>Хаяг: Улаанбаатар хот, Монгол улс</p>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">📞</span>
+            <span className="contact-icon">
+              <i className="fas fa-phone"></i>
+            </span>
             <p>
               Утас: <a href="tel:88108766">88108766</a>,{" "}
               <a href="tel:99192846">99192846</a>
             </p>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">📧</span>
+            <span className="contact-icon">
+              <i className="fas fa-envelope"></i>
+            </span>
             <p>
               Цахим шуудан: <a href="mailto:info@chipmo.mn">info@chipmo.mn</a>
             </p>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">🕐</span>
+            <span className="contact-icon">
+              <i className="fas fa-clock"></i>
+            </span>
             <p>Ажлын цаг: 24/7</p>
           </div>
           <div className="contact-item">
-            <span className="contact-icon">🌐</span>
+            <span className="contact-icon">
+              <i className="fab fa-facebook-f"></i>
+            </span>
             <p>
               <a
-                href="https://facebook.com/chipmo"
+                href="https://www.facebook.com/ChipmoMongolia?__tn__=%3C"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook хуудас
+                Facebook:Chimpo
               </a>
             </p>
           </div>

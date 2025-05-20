@@ -44,10 +44,10 @@ export default function AboutRFID() {
 
           {/* ✅ RFID шошго тайлбар + зурагтай хэсэг (side-by-side layout) */}
           <div className="rfid-tag-block">
-            <div className="rfid-tag-image">
+            <div className="rfid-tag-image animate-fadeInRight">
               <img src={rfidUseCase} alt="RFID tag explanation" />
             </div>
-            <div className="rfid-tag-text">
+            <div className="rfid-tag-text animate-fadeInLeft">
               <div className="secTitle">RFID ШОШГО</div>
               <div className="secwhitetext">
                 RFID шошго нь богино дамжуулаг (IC) гэж нэрлэгддэг жижиг чипээс болон <br />
@@ -60,11 +60,12 @@ export default function AboutRFID() {
               </div>
             </div>
           </div>
+
           <div className="rfid-tag-block2">
-            <div className="rfid-tag-image">
+            <div className="rfid-tag-image animate-fadeInLeft">
               <img src={rfidUseCase} alt="IC" />
             </div>
-            <div className="rfid-tag-text2">
+            <div className="rfid-tag-text2 animate-fadeInRight">
               <div className="secTitle">TAG INTEGRATED CIRCUIT(IC)</div>
               <div className="secwhitetext">
                 RFID шошго дахь чип буюу богино дамжуулагч (IC) нь шошгоны <br />
@@ -78,10 +79,10 @@ export default function AboutRFID() {
           </div>
 
           <div className="rfid-tag-block">
-            <div className="rfid-tag-image">
+            <div className="rfid-tag-image animate-fadeInRight">
               <img src={rfidUseCase} alt="EPC" />
             </div>
-            <div className="rfid-tag-text">
+            <div className="rfid-tag-text animate-fadeInLeft">
               <div className="secTitle">ЭЛЕКТРОН БҮТЭЭГДЭХҮҮНИЙ КОД (EPC)</div>
               <div className="secwhitetext">
                 RFID шошгоны чип дэх электрон бүтээгдэхүүний код (EPC) нь 24 HEX  <br />
@@ -94,11 +95,12 @@ export default function AboutRFID() {
               </div>
             </div>
           </div>
+
           <div className="rfid-tag-block2">
-            <div className="rfid-tag-image">
+            <div className="rfid-tag-image animate-fadeInLeft">
               <img src={rfidUseCase} alt="RFID tag antenna" />
             </div>
-            <div className="rfid-tag-text2">
+            <div className="rfid-tag-text2 animate-fadeInRight">
               <div className="secTitle">RFID ШОШГОНЫ АНТЕННА</div>
               <div className="secwhitetext">
                 RFID шошгон дээрх антенна нь чипийг ажиллуулахын тулд энерги <br />
@@ -115,11 +117,12 @@ export default function AboutRFID() {
               </div>
             </div>
           </div>
+
           <div className="rfid-tag-block">
-            <div className="rfid-tag-image">
+            <div className="rfid-tag-image animate-fadeInRight">
               <img src={rfidUseCase} alt="RFID scanner" />
             </div>
-            <div className="rfid-tag-text">
+            <div className="rfid-tag-text animate-fadeInLeft">
               <div className="secTitle">RFID УНШИГЧ ТӨХӨӨРӨМЖ</div>
               <div className="secwhitetext">
                 RFID уншигч нь шошгоны өгөгдлийг байгууллагын программ хангамжтай <br />

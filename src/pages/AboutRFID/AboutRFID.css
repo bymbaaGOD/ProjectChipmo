@@ -7,13 +7,13 @@
 .Container {
   background-color: black;
   width: 100%;
-  height: 8620px;
+  height: 10000px;
 }
 
 .Container-text {
   color: rgb(255, 0, 0);
   width: 95%;
-  height: 7677px;
+  height: 10000px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -143,7 +143,7 @@
   padding: 60px;
   margin: 100px 150px;
   box-sizing: border-box;
-  margin-bottom: 230px;
+  margin-bottom: 200px;
 }
 .rfid-tag-block2 {
   display: flex;
@@ -155,7 +155,7 @@
   padding: 60px;
   margin: 100px 150px;
   box-sizing: border-box;
-  margin-bottom: 230px;
+  margin-bottom: 200px;
   flex-direction: row-reverse; /* ✅ зураг баруунд, текст зүүнд */
 }
 
@@ -193,5 +193,38 @@
   font-size: 24px;
   font-family: 'Rubik-Regular';
   line-height: 1.6;
+}
+.rfid-reader-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 0 150px 150px 150px;
+}
+
+.reader-card {
+  background-color: black;
+  border: 1px solid #FDFDFD;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.reader-card:hover {
+  transform: scale(1.03);
+}
+
+.reader-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.reader-label {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: 'Rubik-Bold';
+  color: white;
 }
 

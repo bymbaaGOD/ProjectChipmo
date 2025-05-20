@@ -1,7 +1,17 @@
 import React from "react";
 import rfidbanner from "../../assets/images/rfidbanner.jpg";
-import rfidlogo from "../../assets/images/rfidlogo.jpg";
-import rfidUseCase from "../../assets/images/rfidtag.jpg"; // RFID tag explanation image
+import rfidlogo from "../../assets/images/rfidlogo.png";
+import rfidproduct from "../../assets/images/r5.png";
+import rfidproduct1 from "../../assets/images/ura4.png";
+import rfidproduct2 from "../../assets/images/r20.png";
+import rfidproduct3 from "../../assets/images/r3.png";
+import rfidUseCase from "../../assets/images/rfidtag.png";
+import rfidUseCase1 from "../../assets/images/pic1.png";
+import rfidUseCase2 from "../../assets/images/pic2.png";
+import rfidUseCase3 from "../../assets/images/pic3.png";
+import rfidUseCase4 from "../../assets/images/pic4.png";
+import rfidUseCase5 from "../../assets/images/pic5.png";
+import rfidUseCase6 from "../../assets/images/pic6.png"; // RFID tag explanation image
 import "./AboutRFID.css";
 
 export default function AboutRFID() {
@@ -63,7 +73,7 @@ export default function AboutRFID() {
 
           <div className="rfid-tag-block2">
             <div className="rfid-tag-image animate-fadeInLeft">
-              <img src={rfidUseCase} alt="IC" />
+              <img src={rfidUseCase1} alt="IC" />
             </div>
             <div className="rfid-tag-text2 animate-fadeInRight">
               <div className="secTitle">TAG INTEGRATED CIRCUIT(IC)</div>
@@ -80,7 +90,7 @@ export default function AboutRFID() {
 
           <div className="rfid-tag-block">
             <div className="rfid-tag-image animate-fadeInRight">
-              <img src={rfidUseCase} alt="EPC" />
+              <img src={rfidUseCase2} alt="EPC" />
             </div>
             <div className="rfid-tag-text animate-fadeInLeft">
               <div className="secTitle">ЭЛЕКТРОН БҮТЭЭГДЭХҮҮНИЙ КОД (EPC)</div>
@@ -98,7 +108,7 @@ export default function AboutRFID() {
 
           <div className="rfid-tag-block2">
             <div className="rfid-tag-image animate-fadeInLeft">
-              <img src={rfidUseCase} alt="RFID tag antenna" />
+              <img src={rfidUseCase3} alt="RFID tag antenna" />
             </div>
             <div className="rfid-tag-text2 animate-fadeInRight">
               <div className="secTitle">RFID ШОШГОНЫ АНТЕННА</div>
@@ -120,10 +130,69 @@ export default function AboutRFID() {
 
           <div className="rfid-tag-block">
             <div className="rfid-tag-image animate-fadeInRight">
-              <img src={rfidUseCase} alt="RFID scanner" />
+              <img src={rfidUseCase4} alt="RFID scanner" />
             </div>
             <div className="rfid-tag-text animate-fadeInLeft">
               <div className="secTitle">RFID УНШИГЧ ТӨХӨӨРӨМЖ</div>
+              <div className="secwhitetext">
+                RFID уншигч нь шошгоны өгөгдлийг байгууллагын программ хангамжтай <br />
+                холбоход маш чухал үүрэгтэй. Үүгээр тооллого, хайлт, анхан шатны өгөгдөл <br />
+                дамжуулах гэх мэт маш чухал ажлуудыг ойр орчимын шошготой холбогдож <br />
+                гүйцэтгэдэг. Chainway брэндийн C72, R5, UR4A, R3, M8N R20 зэрэг уншигчид нь
+                өндөр чанар, найдвартай ажиллагаатай гэдгээрээ дэлхийн тэргүүлэгчдийн
+                эгнээнд зүй ёсоор ордог. Эдгээр уншигчдыг хослуулсанаар төрөл бүрийн
+                бизнесийн орчинд тулгарах асуудлуудыг цогцоор шийдвэрлэх чадвах бөгөөд
+                их хэмжээний бараа материалыг ямар ч байгууллага ашиглах боломжтой юм.
+              </div>
+            </div>
+          </div>
+          <div className="rfid-reader-grid">
+          <div className="reader-card">
+            <img src={rfidproduct} alt="R5" className="reader-img" />
+            <div className="reader-label">R5 БУГУЙН УНШИГЧ</div>
+          </div>
+          <div className="reader-card">
+            <img src={rfidproduct1} alt="URA4" className="reader-img" />
+            <div className="reader-label">URA4 СУУРИН УНШИГЧ</div>
+          </div>
+          <div className="reader-card">
+            <img src={rfidproduct2} alt="R20" className="reader-img" />
+            <div className="reader-label">R20 ЗҮҮДЭГ УНШИГЧ</div>
+          </div>
+          <div className="reader-card">
+            <img src={rfidproduct3} alt="R3" className="reader-img" />
+            <div className="reader-label">R3 ШИРЭЭНИЙ УНШИГЧ</div>
+          </div>
+        </div>
+
+        <div className="rfid-tag-block2">
+            <div className="rfid-tag-image animate-fadeInLeft">
+              <img src={rfidUseCase5} alt="RFID tag antenna" />
+            </div>
+            <div className="rfid-tag-text2 animate-fadeInRight">
+              <div className="secTitle">RFID СУУРИН УНШИГЧЫН АНТЕННА</div>
+              <div className="secwhitetext">
+                RFID шошгон дээрх антенна нь чипийг ажиллуулахын тулд энерги <br />
+                дамжуулах үүрэгтэй. Антенна нь том байх тусам илүү их энерги <br />
+                цуглуулж, унших зайг хол байлгадаг. Антеннүүд нь тодорхой <br />
+                хэрэгцээнээс хамаарч өөр өөр байж бөгөөд зарим нь тодорхой <br />
+                давтамжтай байх эсвэл шингэн, металл зэрэгт материалд <br />
+                зориулагдсан байдаг. Тэдгээрийн дээр нь мэдээлэл хэвлэх эсвэл <br />
+                код шарах зэрэг шаардлагаас хамаарч янз бүрийн хэлбэр, хэмжээ <br />
+                эсхүл материалаар бүтээгдэж болно. Нэг антеннтай шошго нь дохио <br />
+                хүлээн авах боломжгүй ба “ул уншигч орчин”-той байж болох ч хос <br />
+                антеннтай шошго нь энэ төрлийн бүсийг арилгаж, найдвартай <br />
+                ажиллагааг хангаж өгдөг.
+              </div>
+            </div>
+          </div>
+
+          <div className="rfid-tag-block">
+            <div className="rfid-tag-image animate-fadeInRight">
+              <img src={rfidUseCase6} alt="RFID scanner" />
+            </div>
+            <div className="rfid-tag-text animate-fadeInLeft">
+              <div className="secTitle">RFID ENCODING PRINTER</div>
               <div className="secwhitetext">
                 RFID уншигч нь шошгоны өгөгдлийг байгууллагын программ хангамжтай <br />
                 холбоход маш чухал үүрэгтэй. Үүгээр тооллого, хайлт, анхан шатны өгөгдөл <br />

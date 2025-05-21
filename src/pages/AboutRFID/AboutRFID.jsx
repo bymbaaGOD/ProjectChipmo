@@ -205,6 +205,150 @@ export default function AboutRFID() {
               </div>
             </div>
           </div>
+          <div className="rfid-compare-container">
+  <div className="frame-66 combined-header">
+    <div className="frame-67">
+      <img
+        className="element-6"
+        alt="Element"
+        src="https://c.animaapp.com/maweg3z5O6b9fU/img/5115664-1.png"
+      />
+      <div className="text-wrapper-28">RFID</div>
+    </div>
+
+    <div className="text-wrapper-29">VS</div>
+
+    <div className="frame-68">
+      <div className="text-wrapper-30">BARCODE</div>
+      <img
+        className="barcode-2"
+        alt="Barcode"
+        src="https://c.animaapp.com/maweg3z5O6b9fU/img/barcode-2-1.png"
+      />
+    </div>
+  </div>
+
+  <div className="rfid-compare-table">
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">РАДИО ДОЛГИОН</div>
+      <div className="rfid-col center">TECHNOLOGY</div>
+      <div className="rfid-col right">өгөгдлийн дүрслэл ба лазер сканнер</div>
+    </div>
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">ИХ ХЭМЖЭЭНИЙ ӨГӨГДЛИЙГ ХАДГАЛАХ, ДАМЖУУЛАХ БОЛОМЖТОЙ.</div>
+      <div className="rfid-col center">DATA STORAGE</div>
+      <div className="rfid-col right">ЗӨВХӨН ХЯЗГААРЛАГДМАЛ ХЭМЖЭЭНИЙ ӨГӨГДӨЛ ХАДГАЛАХ БОЛОМЖТОЙ</div>
+    </div>
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">ШУУД ХАРАХ ШААРДЛАГАГҮЙГЭЭР УНШИХ БОЛОМЖТОЙ</div>
+      <div className="rfid-col center">READABILITY</div>
+      <div className="rfid-col right">УНШИХЫН ТУЛД СКАННЕРЫН ШУУД ХАРАГДАХ ХЭСЭГТ БАЙХ ШААРДЛАГАТАЙ</div>
+    </div>
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">АЛСЫН ЗАЙНААС УНШИХ БОЛОМЖТОЙ</div>
+      <div className="rfid-col center">RANGE</div>
+      <div className="rfid-col right">СКАННЕРТАЙ ОЙРХОН БАЙХ ШААРДЛАГАТАЙ</div>
+    </div>
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">УДААН ЭДЭЛГЭЭТЭЙ, ГЭМТЭЛД ТЭСВЭРТЭЙ</div>
+      <div className="rfid-col center">DURABILITY</div>
+      <div className="rfid-col right">ЭЛЭГДЭЛ, УРАГДСАНЫ УЛМААС АМАРХАН ГЭМТЭХ ЭСВЭЛ УНШИХ БОЛОМЖГҮЙ</div>
+    </div>
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">АНХНЫ ӨРТӨГ ӨНДӨР</div>
+      <div className="rfid-col center">COST</div>
+      <div className="rfid-col right">БОЛОМЖИЙН ҮНЭ, ХЭРЭГЖҮҮЛЭХЭД ХЯЛБАР</div>
+    </div>
+    <div className="rfid-compare-row">
+      <div className="rfid-col left">ОБЪЕКТ ДОТОР СУУЛГАЖ ЭСВЭЛ БҮТЭЭГДЭХҮҮНИЙ САВЛАГААНД НЭГТГЭЖ БОЛНО</div>
+      <div className="rfid-col center">FLEXIBILITY</div>
+      <div className="rfid-col right">ГАДАРГУУ ДЭЭР ХЭВЛЭСЭН БӨГӨӨД БАЙРЛУУЛАХАД ХАНГАЛТТАЙ ЗАЙ ШААРДЛАГАТАЙ</div>
+    </div>
+  </div>
+</div>
+
+<div className="rfid-advantage-block">
+  <div className="rfid-advantage-text">
+    <div className="rfid-advantage-title">RFID-ЫН ДАВУУ ТАЛ</div>
+    <div>
+      Бар код болон бусад автомат таних технологиудаас ялгаатай нь RFID шошго нь өвөрмөц,
+      хуулагдах боломжгүй серийн дугаартай байдаг бөгөөд автоматаар, нэгэн зэрэг, хүний
+      оролцоо шаардлагагүйгээр мэдээллийг таних боломжтой. Бүрэн хэрэгжсэн тохиолдолд RFID
+      технологи нь бодит цагийн горимоор дэлхийн хаанаас бараа материалд хяналт тавих,
+      үлдэгдлээ шууд шалгах, аюулгүй байдлын өндөр зэрэглэлийн хамгаалалттай болж улмаар
+      борлуулалт, үр ашиг, мэдээллийн оновчтой байдал, мэдээлэлд үндэслэсэн шийдвэр гаргалт
+      зэргийг шинэ түвшинд хүргэх боломжтой юм.
+    </div>
+  </div>
+  <div className="rfid-advantage-image">
+    <img src={rfidUseCase} alt="RFID Advantage" />
+  </div>
+</div>
+    <div style={{ textAlign: "center" }}>
+  <div className="rfid-title1">RFID ТЕХНОЛОГИЙН ТҮҮХ</div>
+</div>
+
+<div className="rfid-timeline">
+  <div className="timeline-line"></div>
+
+  <div className="timeline-entry left">
+    <div className="timeline-circle">1945</div>
+    <div className="timeline-box">
+      <strong>Анхны RFID чип</strong><br />
+      Mario W. Cardullo гэх АНУ-ын иргэн анхны идэвхтэй RFID чипний патентыг эзэмшжээ.
+    </div>
+  </div>
+
+  <div className="timeline-entry right">
+    <div className="timeline-circle">1973</div>
+    <div className="timeline-box">
+      <strong>Дэлхийн 2-р дайн</strong><br />
+      Дайны үеэр Британий нисгэгчдийн байршлыг олж тогтоох зориулалттай RFID системийг үүсгэв.
+    </div>
+  </div>
+
+  <div className="timeline-entry left">
+    <div className="timeline-circle">1990</div>
+    <div className="timeline-box">
+      <strong>Wal-Mart кейс</strong><br />
+      АНУ-ын Wal-mart дэлгүүр анхны RFID програмд 500 сая долларын хөрөнгө оруулав.
+    </div>
+  </div>
+
+  <div className="timeline-entry right">
+    <div className="timeline-circle">2004</div>
+    <div className="timeline-box">
+      <strong>UHF буюу өндөр давтамжтай RFID</strong><br />
+      6 метр хүртэлх унших зайтай UHF уншигч зохион бүтээгдэв.
+    </div>
+  </div>
+
+  <div className="timeline-entry left">
+    <div className="timeline-circle">2016</div>
+    <div className="timeline-box">
+      <strong>Нэг чипний ашиг</strong><br />
+      ROI 200%-д хүрэв. RFID-ийн үнэ цэнэ нэмэгдэв.
+    </div>
+  </div>
+
+  <div className="timeline-entry right">
+    <div className="timeline-circle">2020</div>
+    <div className="timeline-box">
+      <strong>Үнэ бууралт</strong><br />
+      Үйлдвэрлэгчид 30%-иар хямд RFID шошго гаргаж эхлэв.
+    </div>
+  </div>
+
+  <div className="timeline-entry left">
+    <div className="timeline-circle">2030</div>
+    <div className="timeline-box">
+      <strong>RFID зах зээл</strong><br />
+      2030 он гэхэд 31.5 тэрбум ам.долларын хандалттай болно.
+    </div>
+  </div>
+</div>
+
+
         </div>
       </div>
     </>

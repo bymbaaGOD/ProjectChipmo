@@ -1,4 +1,4 @@
-
+/* 🌐 Layout & Global Containers */
 .rfid-banner {
   width: 100%;
   height: 918px;
@@ -7,18 +7,19 @@
 .Container {
   background-color: black;
   width: 100%;
-  height: 10000px;
+  height: 12000px;
 }
 
 .Container-text {
-  color: rgb(255, 0, 0);
+  color: white;
   width: 95%;
-  height: 10000px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-.Title {
+/* 🟧 Section Titles */
+.Title,
+.secTitle {
   color: #E88524;
   font-size: 42px;
   font-family: 'Rubik-Bold';
@@ -28,62 +29,44 @@
   margin-top: 61px;
 }
 
-.whitetext {
-  color: white;
-  font-size: 24px;
-  font-family: 'Rubik-Regular';
-  line-height: 1.6;
-  padding-top: 35px;
-}
-
-.lastwhitetext {
-  color: white;
-  font-size: 24px;
-  font-family: 'Rubik-Regular';
-  line-height: 1.6;
-  padding-top: 35px;
-  margin-bottom: 200px;
-}
-
-.seclastwhitetext {
-  color: white;
-  font-size: 24px;
-  font-family: 'Rubik-Regular';
-  line-height: 1.6;
-  margin-bottom: 200px;
-}
-
-.secTitle {
-  color: #E88524;
-  font-size: 42px;
-  font-family: 'Rubik-Bold';
-  margin-left: 147px;
-}
-
+/* 📝 Paragraph Texts */
+.whitetext,
+.lastwhitetext,
+.seclastwhitetext,
 .secwhitetext {
   color: white;
   font-size: 24px;
   font-family: 'Rubik-Regular';
   line-height: 1.6;
+}
+
+.whitetext,
+.lastwhitetext {
+  padding-top: 35px;
+}
+
+.lastwhitetext,
+.seclastwhitetext {
+  margin-bottom: 200px;
+}
+
+.secwhitetext {
   padding-top: 35px;
   margin-left: 147px;
 }
 
+/* 🧱 Highlight Block */
 .border {
   border: 1px solid #FDFDFD;
   border-radius: 15px;
-  padding: 35px;
+  background-color: black;
+  padding: 35px 0 35px 300px;
   box-sizing: border-box;
-  width: calc(100% - 300px); /* 100% - (left + right margin) */
-  margin-left: 147px;
-  margin-right: 153px; /* Баруун талаас зай авна */
-  margin-top: 120px;
-  background-color: black; /* суурь өнгө тохируулах бол */
-  padding-left: 300px;
+  width: calc(100% - 300px);
+  margin: 120px 153px 0 147px;
 }
 
-
-/* ✅ Нэмэгдсэн шинэ CSS */
+/* ✅ RFID Component Breakdown */
 .rfid-section {
   display: flex;
   justify-content: space-between;
@@ -116,35 +99,29 @@
   margin-left: 60px;
   margin-top: 40px;
 }
+
 .rfid-logo {
   width: 180px;
   height: auto;
 }
+
+/* 🖼️ RFID Images */
 .rfid-image-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin: 100px 0 150px 0;
 }
+
 .rfid-usecase-image {
   max-width: 90%;
   height: auto;
   border-radius: 12px;
   border: 2px solid #E88524;
 }
-.rfid-tag-block {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  border: 1px solid #FDFDFD;
-  border-radius: 15px;
-  padding: 60px;
-  margin: 100px 150px;
-  box-sizing: border-box;
-  margin-bottom: 200px;
-}
+
+/* 🧱 RFID Block Sections */
+.rfid-tag-block,
 .rfid-tag-block2 {
   display: flex;
   justify-content: space-between;
@@ -153,26 +130,18 @@
   border: 1px solid #FDFDFD;
   border-radius: 15px;
   padding: 60px;
-  margin: 100px 150px;
+  margin: 100px 150px 200px 150px;
   box-sizing: border-box;
-  margin-bottom: 200px;
-  flex-direction: row-reverse; /* ✅ зураг баруунд, текст зүүнд */
 }
 
-.rfid-tag-text2 {
-  flex: 1;
-  margin-right: 60px; /* ✅ зургийн зүүн талд зай үүсгэх */
+.rfid-tag-block2 {
+  flex-direction: row-reverse;
 }
 
+.rfid-tag-image img,
 .rfid-tag-block2 .rfid-tag-image img {
   max-width: 300px;
   height: auto;
-  border-radius: 8px;
-  border: 2px solid #E88524;
-}
-.rfid-tag-image img {
-  max-width: 300px;
-  height: 500p;
   border-radius: 8px;
 }
 
@@ -181,19 +150,28 @@
   margin-left: 60px;
 }
 
-.rfid-tag-text .secTitle {
+.rfid-tag-text2 {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.rfid-tag-text .secTitle,
+.rfid-tag-text2 .secTitle {
   color: #E88524;
   font-size: 42px;
   font-family: 'Rubik-Bold';
   margin-bottom: 20px;
 }
 
-.rfid-tag-text .secwhitetext {
+.rfid-tag-text .secwhitetext,
+.rfid-tag-text2 .secwhitetext {
   color: white;
   font-size: 24px;
   font-family: 'Rubik-Regular';
   line-height: 1.6;
 }
+
+/* 🖥️ RFID Reader Cards */
 .rfid-reader-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -228,3 +206,249 @@
   color: white;
 }
 
+/* 📊 Comparison Container */
+.rfid-compare-container {
+  margin: 100px 150px 150px 150px;
+  padding: 60px;
+  background-color: black;
+  border: 1px solid #FDFDFD;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+/* 🔁 Header: RFID vs BARCODE */
+.combined-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.frame-66 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+.frame-67,
+.frame-68 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 50px;
+}
+
+.frame-67 {
+  margin-right: 50px;
+}
+
+.text-wrapper-28,
+.text-wrapper-30 {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Rubik-Bold';
+}
+
+.text-wrapper-29 {
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Rubik-Bold';
+  margin-top: 50px; /* Align vertically to first comparison row */
+}
+
+.element-6,
+.barcode-2 {
+  width: 200px;
+  height: auto;
+}
+
+/* 📈 RFID Comparison Table */
+.rfid-compare-table {
+  width: 100%;
+}
+
+.rfid-compare-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.rfid-compare-row:last-child {
+  border-bottom: none;
+}
+
+.rfid-col {
+  flex: 1;
+  font-size: 18px;
+  color: white;
+  font-family: 'Rubik-Regular';
+}
+
+.rfid-col.center {
+  color: #F28C28;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Rubik-Bold';
+}
+
+.rfid-col.left {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.rfid-col.right {
+  text-align: right;
+  padding-left: 20px;
+}
+.rfid-advantage-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black;
+  border: 1px solid #FDFDFD;
+  border-radius: 15px;
+  padding: 60px;
+  margin: 200px 150px;
+  box-sizing: border-box;
+  gap: 60px;
+}
+
+/* Left Side Text Section */
+.rfid-advantage-text {
+  flex: 1;
+  font-family: 'Rubik-Regular';
+  color: white;
+  font-size: 20px;
+  line-height: 2.1;
+  padding-top: 20px;
+}
+
+/* Title with Orange Underline */
+.rfid-advantage-title {
+  font-family: 'Rubik-Bold';
+  font-size: 32px;
+  color: white;
+  position: relative;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.rfid-advantage-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #E88524;
+  margin-top: 12px;
+}
+
+/* Right Side Image */
+.rfid-advantage-image {
+  flex-shrink: 0;
+  max-width: 380px;
+  width: 100%;
+}
+
+.rfid-advantage-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.rfid-title1 {
+  color: white;
+  font-family: 'Rubik-Bold';
+  font-size: 42px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.rfid-title1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background-color: #E88524;
+  margin: 12px auto 0 auto; /* centers the underline */
+}
+.rfid-timeline {
+  position: relative;
+  margin: 100px auto;
+  width: 80%;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 3px;
+  background-color: white;
+}
+
+.timeline-entry {
+  position: relative;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.timeline-entry.left {
+  justify-content: flex-start;
+}
+
+.timeline-entry.right {
+  justify-content: flex-end;
+}
+
+
+.timeline-circle {
+  color: #E88524;
+  font-family: 'Rubik-Bold';
+  font-size: 45px;
+  font-weight: 500;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.timeline-entry.right .timeline-circle {
+  order: 2;
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.timeline-box {
+  background-color: #000000;
+  color: white;
+  font-family: 'Rubik-Regular';
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+.timeline-entry.right .timeline-box {
+  margin-left: 0;
+  margin-right: 20px;
+}

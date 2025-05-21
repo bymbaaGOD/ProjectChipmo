@@ -1,0 +1,123 @@
+.hero-container {
+  background-color: rgb(20, 20, 20);
+  background-image: 
+    linear-gradient(to bottom, rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0)),
+    url('../../assets/images/homeBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 30px;
+}
+
+.bannerSection {
+    width: 90%;
+    height: auto    ;
+    display: flex;
+    margin: 0 auto;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    color: white;
+    font-family: 'Rubik-Bold';
+    font-size: 16px;
+}
+
+.features-container {
+    display: flex;
+    gap: 50px;
+    color: #E88524;
+    margin-bottom: 50px;
+}
+
+.features-item {
+    margin-bottom: 50px;
+}
+
+.contactButton {
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  width: 201px;
+  height: 34px;
+  font-family: "Rubik-Bold";
+  font-size: 16px;
+  border: none;
+}
+
+.video-section {
+    padding-top: 30px;
+}
+
+.video-section2 {
+    width:fit-content;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.right-section {
+    color: white;
+    font-family: 'Rubik-Bold';
+    font-size: 16px;
+    padding-top: 50px; 
+}
+
+.moving-text {
+    width: 100%;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+  font-size: 16px;
+  font-family: 'Rubik-Regular'
+}
+
+.moving-content {
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.moving-track {
+  display: flex;
+  width: fit-content;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.intro-card {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.intro-card2 {
+  width:fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.profile-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sponsers {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}

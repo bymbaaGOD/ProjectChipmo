@@ -13,7 +13,6 @@
 }
 
 .horizontal-card-image {
-  width: 600px;
   object-fit: cover;
   flex-shrink: 0;
   display: block;
@@ -25,6 +24,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  max-width: 800px;
 }
 
 .horizontal-card-content div {
@@ -33,7 +33,7 @@
 
 .horizontal-card3 {
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Rubik-Regular';
   color: #f9f9f9dc;
   line-height: 2;
@@ -43,21 +43,21 @@
 }
 
 .horizontal-card-title {
-  font-size: 32px;
+  font-size: 24px;
   font-family: 'Rubik-Bold';
   margin-bottom: 10px;
   color: #E88524;
 }
 
 .horizontal-card-Subtitle {
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Rubik-Bold';
   margin-bottom: 10px;
   color: white
 }
 
 .horizontal-card-description {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Rubik-Regular';
   color: #f9f9f9dc;
   line-height: 2;

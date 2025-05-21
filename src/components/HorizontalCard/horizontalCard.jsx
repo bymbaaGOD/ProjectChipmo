@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./horizontalCard.css";
 
-export default function HorizontalCard({ image, title, description }) {
+export default function HorizontalCard({ image, title, description, width }) {
   return (
     <div className="horizontal-card">
       <div className="horizontal-card-content">
@@ -13,7 +13,7 @@ export default function HorizontalCard({ image, title, description }) {
         src={image}
         alt={title}
         className="horizontal-card-image"
-        draggable={false}
+        width={width}
       />
     </div>
   );
@@ -25,7 +25,30 @@ HorizontalCard.propTypes = {
   description: PropTypes.string.isRequired,
 };
 
-export function HorizontalCard2({image, title,subTitle, description1, description2, description3, description4, description5}) {
+export function HorizontalCard1({ image, title, description, width }) {
+  return (
+    <div className="horizontal-card">
+      <img
+        src={image}
+        alt={title}
+        className="horizontal-card-image"
+        width={width}
+      />
+      <div className="horizontal-card-content">
+        <h3 className="horizontal-card-title">{title}</h3>
+        <div className="horizontal-card-description">{description}</div>
+      </div>
+    </div>
+  );
+}
+
+HorizontalCard1.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+export function HorizontalCard2({image, title,subTitle, description1, description2, description3, description4, description5, width}) {
    return (
     <div className="horizontal-card">
       <div className="horizontal-card-content">
@@ -40,6 +63,7 @@ export function HorizontalCard2({image, title,subTitle, description1, descriptio
       <img
         src={image}
         alt={title}
+        width={width}
         className="horizontal-card-image"
         draggable={false}
       />

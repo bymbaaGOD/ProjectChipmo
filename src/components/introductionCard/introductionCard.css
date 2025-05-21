@@ -1,0 +1,33 @@
+.custom-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  background-color: rgba(46, 46, 46, 0.321);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.192);
+}
+
+.card-title {
+  font-size: 28px;
+  font-family: 'Rubik-Bold';
+  text-align: center;
+
+}
+
+.card-content {
+  font-family: 'Rubik-Regular';
+  font-size: 16px;
+  color: #f9f9f9dc;
+  line-height: 1.5;
+}
+
+.icon-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+    width: 35px;
+    height:auto;
+}

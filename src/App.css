@@ -8,7 +8,28 @@
   src: url(./assets/fonts/rubik/Rubik-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Rubik-SemiBold';
+  src: url(./assets/fonts/rubik/Rubik-SemiBold.ttf)
+}
+
 body {
   background-color: black;
   color: white;
+}
+
+.header {
+  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik-Bold';
+    font-size: 28px;
+}
+
+.firstContainer {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: "flex";
+    justify-content: center;
 }

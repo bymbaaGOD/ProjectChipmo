@@ -1,72 +1,46 @@
-.info-card {
-  width: 300px;
-  height: 460px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.192);
-  transition: transform 0.2s ease-in-out;
-  background-color: rgba(46, 46, 46, 0.321)
-}
-
-.info-card2 {
+.profile-card {
   width: 300px;
   height: 460px;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
+
 }
 
-.info-card:hover {
+.profile-card:hover {
   transform: scale(1.01);
 }
 
-.info-card-image {
-  height: 200px;
-  width: 200px;
+.profile-card-image {
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   pointer-events: none;
   user-select: none;
   display: block;       /* make it a block-level element */
   margin: 0 auto;   
+  border-radius: 90px;
 }
 
-.info-card-image2 {
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  pointer-events: none;
-  user-select: none;
-  display: block;       /* make it a block-level element */
-  margin: 0 auto;   
-}
-
-.info-card-content {
+.profile-card-content {
   height: 50%;
   padding: 24px;
   overflow: hidden;
   position: relative;
 }
 
-.info-card-title {
+.profile-card-title {
   font-family: 'Rubik-Bold';
   font-size: 1.25rem;
   margin-bottom: 12px;
   text-align: center;
-  color: #E88524
+  color: white
 }
-
-.info-card-title2 {
-  font-family: 'Rubik-SemiBold';
-  font-size: 1.15rem;
-  margin-bottom: 12px;
-  color: #E88524
-}
-
 ::-webkit-scrollbar {
   display: none
 }
 
-.info-card-description {
+.profile-card-description {
   font-family: 'Rubik-Regular';
   font-size: 0.9rem;
   color: #f9f9f9dc;
@@ -78,9 +52,10 @@
   -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
-.info-card:hover .info-card-description {
+.profile-card:hover .profile-card-description {
   -webkit-line-clamp: unset;
   height: auto;
   overflow-y: auto;

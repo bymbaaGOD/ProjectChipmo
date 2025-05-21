@@ -25,3 +25,26 @@ InfoCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };
+
+export function InfoCard2({ image, title, description }) {
+  return (
+    <div className="info-card2">
+      <div className="info-card-content">
+        <h3 className="info-card-title2">{title}</h3>
+        <p className="info-card-description">{description}</p>
+      </div>
+      <img
+        src={image}
+        alt={title}
+        className="info-card-image2"
+        draggable={false}
+      />
+    </div>
+  );
+}
+
+InfoCard2.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

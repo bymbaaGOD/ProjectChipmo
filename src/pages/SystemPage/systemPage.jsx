@@ -13,11 +13,12 @@ import lowcode from "../../assets/icons/low-code.png"
 import RFID from "../../assets/icons/rfid1.png"
 import './systemPage.css'
 
-    export default function ExamplePage() {
+    export default function SystemPage() {
     return (
         <>
         <div className="bannerContainer" />
-        <div className="header"><h2>CHIPMO SYSTEM</h2></div>
+           <div className="header"><h2>CHIPMO SYSTEM</h2>
+        </div>
         <div className="firstContainer">
             <div style={{  display: "flex", justifyContent: "center" }}>
             <HorizontalCard
@@ -34,6 +35,7 @@ import './systemPage.css'
         <div className="firstContainer">
             <HorizontalCard2
             image={CardImage2}
+            width="600px"
             title="Хэрхэн хэрэгжүүлэх вэ?"
             subTitle="Chipmo системийг нэвтүүлэх нь энгийн бөгөөд шуурхай байх болно."
             description1="нэвтрүүлэлтийн энгийн болгохын тулд манай баг таныг алхам бүрийг удирдан чиглүүлнэ: "

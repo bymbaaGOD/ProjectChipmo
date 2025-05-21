@@ -1,0 +1,1 @@
+if(console){var cookiedomainwarning='Error: The domain CHAINWAY.NET is not authorized to show the cookie banner for domain group ID bf62d28b-b1f6-4a75-86fe-7d797fb54a49. Please add it to the domain group in the Cookiebot Manager to authorize the domain.';if(typeof console.warn === 'function'){console.warn(cookiedomainwarning)}else{console.log(cookiedomainwarning)}};

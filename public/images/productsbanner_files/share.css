@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?s5w2ng');
+  src:  url('../fonts/icomoon.eot?s5w2ng#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?s5w2ng') format('truetype'),
+    url('../fonts/icomoon.woff?s5w2ng') format('woff'),
+    url('../fonts/icomoon.svg?s5w2ng#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-printer:before {
+  content: "\e954";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-tumblr:before {
+  content: "\eab9";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+.sharebar {
+	display:block;
+	margin-bottom:.5rem;
+    position:absolute;
+    left:-20px;
+    top:40px;
+}
+
+
+.sharebar a[class*=icon]:hover,.sharebar button[class*=icon]:hover {
+	background:0 0;
+	border:0;
+    display:block;
+}
+.sharebar.sharing--fixed {
+	position:fixed;
+	top:135px
+}
+.sharebar.sharing--docked {
+	position:absolute;
+	top:auto;
+	bottom:30px
+}
+.sharebar [class*=icon] {
+	font-size:1em;
+	color:#4c4c4c;
+	 display:block;
+	vertical-align:middle
+}
+.sharebar [class*=icon]:before {
+	display:inline-block;
+	vertical-align:middle;
+	padding:1em .8em;
+	color:#444
+}
+.sharebar [class*=icon]:active,.sharebar [class*=icon]:focus,.sharebar [class*=icon]:hover {
+	text-decoration:none;
+	outline-width:0
+}
+.no-print .sharebar .icon-print {
+	display:none
+}
+.sharebar button {
+background:none;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+@media print {
+    .related_articles,.more_stories,.inner_banner,.header,.footer,.sharebar {
+       display:none;
+    }
+}

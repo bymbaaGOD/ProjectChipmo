@@ -15,7 +15,7 @@ export default function Header() {
             <Link to="system"><li className="navItem">СИСТЕМ</li></Link>
             <Link to="products"><li className="navItem">БҮТЭЭГДЭХҮҮН</li></Link>
             <Link to="calculator"> <li className="navItem">ТООЦООЛУУР</li></Link>
-            <Link to="contact"><li className="navItem">ХОЛБОГДОХ</li></Link>
+            <Link to="contact "><li className="navItem">ХОЛБОГДОХ</li></Link>
             <li className="navItem">ҮНИЙН САНАЛ</li>
             <li className="navItem">MN/EN</li>
           </div>

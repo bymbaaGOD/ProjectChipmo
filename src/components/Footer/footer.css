@@ -1,245 +1,43 @@
-/* ────────────────
-   Footer
-   ──────────────── */
-.footer {
-  background-color: #000;
-  padding: 46px 31px 91px;
-  overflow: hidden;
+footer {
+  height: 300px;
+  border: 1px solid white;
+  display: block;
 }
 
-@media (width <= 991px) {
-  .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-/* ────────────────
-   Generic flex row
-   ──────────────── */
-.div {
+.content {
+  width: 1200px;
+  border: 1px solid white ;
+  margin: 0 auto;   
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
-@media (width <= 991px) {
-  .div {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
+.footer-logo {
+  width: 150px;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+  display: block;   
+  border: 1px solid white;
 }
 
-/* ────────────────
-   Column 1
-   ──────────────── */
-.column {
+.contact {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  width: 20%;
-  margin-left: 0;
-  line-height: normal;
 }
 
-@media (width <= 991px) {
-  .column {
-    width: 100%;
-  }
+button {
+  width: fit-content;
 }
 
-/* ────────────────
-   Column‑1 inner text row
-   ──────────────── */
-.div2 {
-  display: flex;
-  flex-grow: 1;
-  align-items: flex-start;
-  gap: 1px;
-
-  color: #fff;
-  font-family: Rubik, -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.6;
-}
-
-@media (width <= 991px) {
-  .div2 {
-    margin-top: 40px;
-  }
-}
-
-/* Icon inside .div2 */
-.img {
-  aspect-ratio: 0.77;        /* 57 × 74‑ish */
-  width: 57px;
-  flex-shrink: 0;
-  object-fit: contain;
-  object-position: center;
-}
-
-/* Column‑1 badge / title area */
-.div3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 13px;
-}
-
-.div4 {
-  color: #e88524;
+.title {
+  font-family: 'Rubik-Bold';
   font-size: 20px;
-}
-
-/* Info chip container */
-.infochipmomn {
-  align-self: stretch;
-  margin: 45px 12px 0 11px;  /* top right bottom left */
-}
-
-@media (width <= 991px) {
-  .infochipmomn {
-    margin: 40px 10px 0;
-  }
-}
-
-/* Two mysterious utility classes */
-.css97688108766,
-.css97699192846 {
   margin-top: 5px;
 }
 
-/* Chip itself */
-.div5 {
-  color: #000;
-  background-color: #e88524;
-  border-radius: 3px;
-  align-self: stretch;
-  gap: 10px;
-
-  min-height: 29px;
-  margin-top: 23px;
-  padding: 4px 1px;
-  font-size: 13px;
-}
-
-/* ────────────────
-   Column 2
-   ──────────────── */
-.column2 {
+.links {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  width: 80%;
-  margin-left: 20px;
-  line-height: normal;
-}
-
-@media (width <= 991px) {
-  .column2 {
-    width: 100%;
-  }
-}
-
-/* Column‑2 wrapper */
-.div6 {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: 100%;
-
-  font-family: Rubik, -apple-system, Roboto, Helvetica, sans-serif;
-  font-weight: 700;
-  line-height: 1.6;
-}
-
-@media (width <= 991px) {
-  .div6 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-
-/* Row of nav / links / whatever */
-.div7 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px 56px;
-
-  color: #e88524;
-  font-size: 20px;
-}
-
-@media (width <= 991px) {
-  .div7 {
-    max-width: 100%;
-  }
-}
-
-/* Auto‑margin helpers (used several times) */
-.div8,
-.div9,
-.div11 {
-  align-self: stretch;
-  margin: auto 0;  /* top & bottom auto */
-}
-
-.div8 {
-  flex-grow: 1;
-}
-
-.div10 {
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: stretch;
-  width: 119px;
-  margin: auto 0;
-}
-
-.mnen {
-  align-self: stretch;
-  margin: auto 0;
-  font-size: 16px;
-}
-
-/* Inline avatar img */
-.img2 {
-  aspect-ratio: 1;         /* square */
-  width: 60px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  align-self: stretch;
-  object-fit: contain;
-  object-position: center;
-}
-
-/* Small footer note */
-.div12 {
-  color: #fff;
-  align-self: flex-start;
-  margin: 31px 0 0 18px;
-  font-size: 16px;
-}
-
-@media (width <= 991px) {
-  .div12 {
-    margin-left: 10px;
-  }
-}
-
-/* Centered text elements */
-.div13 {
-  text-align: center;
-}
-
-.rfid,
-.div14 {
-  text-align: center;
-  margin-top: 6px;
-}
-
-.div15 {
-  margin-top: 6px;
+  gap: 0px;
 }

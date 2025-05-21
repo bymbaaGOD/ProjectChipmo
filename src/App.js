@@ -6,6 +6,7 @@ import Systempage from "./pages/SystemPage/systemPage"
 import HomePage from "./pages/HomePage/homePage"
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer/footer";
 
 function App() {
   return (
@@ -17,11 +18,8 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/system" element={<Systempage/>}/>
       </Routes>
+      <Footer/>
     </Router>
-    
-    <HomePage
-    />
-    
     </>
   );
 }

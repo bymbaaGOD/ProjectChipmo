@@ -32,12 +32,16 @@
 }
 
 .navItem {
-  color: #fff;
+  color: #dedede;
   text-transform: uppercase;
   font-family: 'Rubik-Bold';
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.navItem:hover {
+  color: white;
 }
 
 .navItem a {

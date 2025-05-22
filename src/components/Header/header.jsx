@@ -13,9 +13,10 @@ export default function Header() {
             <Link to="/"><li className="navItem">НҮҮР</li></Link>
             <Link to="aboutRFID"><li className="navItem">RFID ТУХАЙ</li></Link>
             <Link to="system"><li className="navItem">СИСТЕМ</li></Link>
-            <Link to="products"><li className="navItem">БҮТЭЭГДЭХҮҮН</li></Link>
-            <Link to="calculator"> <li className="navItem">ТООЦООЛУУР</li></Link>
+            <Link to="product"><li className="navItem">БҮТЭЭГДЭХҮҮН</li></Link>
+            <Link to="rfidCalculator"> <li className="navItem">ТООЦООЛУУР</li></Link>
             <Link to="contact "><li className="navItem">ХОЛБОГДОХ</li></Link>
+            <Link to="Login "><li className="navItem">НЭВТРЭХ</li></Link>
             <li className="navItem">ҮНИЙН САНАЛ</li>
             <li className="navItem">MN/EN</li>
           </div>
